@@ -12,7 +12,7 @@ from snowflake.snowpark.functions import col
 import snowflake.snowpark.functions as f
 
 def main(session: snowpark.Session):
-    df = session.table('CUST_INFO')
+    df = session.table('DEMO.DT_DEMO.CUST_INFO')
     agg_df = df.agg(f.min('CUSTid').alias('TEST'),f.max('custid').as_("TEST2"))
     return df
 '
