@@ -5,7 +5,7 @@ RUNTIME_VERSION = '3.8'
 PACKAGES = ('snowflake-snowpark-python')
 HANDLER = 'main'
 comment = 'snowflake as sandbox for snowpark'
-EXECUTE AS CALLER
+EXECUTE AS OWNER
 AS '
 import snowflake.snowpark as snowpark
 import snowflake.snowpark.functions as f
